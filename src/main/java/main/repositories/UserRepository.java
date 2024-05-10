@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface UserRepository extends CrudRepository<User,Integer> {
+public interface UserRepository extends CrudRepository<User,Long> {
     List<User> findAll();
-    Optional<User> findById(int id);
+    Optional<User> findById(long id);
     Optional<User> findByEmail(String email);
     Optional<User> findByPhoneNumber(String phoneNumber);
     List<User> findAllByBirthDateBetween(LocalDate birthDateStart,LocalDate birthDateEnd);

@@ -3,7 +3,6 @@ package main.mappers;
 import main.DTO.UserDto;
 import main.entities.User;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 @Mapper
@@ -19,3 +18,4 @@ public abstract class UserMapper {
         return user;
     }
 }
+
